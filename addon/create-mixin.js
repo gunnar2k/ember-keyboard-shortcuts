@@ -18,6 +18,7 @@ export default function(bindEvent, unbindEvent) {
         var preventDefault = true;
 
         function invokeAction(action) {
+          console.log(action);
           var type = Ember.typeOf(action);
 
           if (type === 'string') {
